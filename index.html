@@ -4,13 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="fb.png" />
+    <title>Facebook - log in and sign up</title>
     <link href="main.css" rel="stylesheet" />
   </head>
-  <body>
-    <div class="px-2 bg-red-600">
-      <h1 class="px-5 bg-black">Hello world</h1>
-      <h2>Hello world here</h2>
+  <body class="bg-gray-100">
+    <div class="container mt-36 flex mx-auto items-center justify-center">
+      <!-- // left side  -->
+      <div class="left w-1/2 mx-14">
+        <img src="facebook.svg" alt="facebook image file" class="w-80" />
+        <p class="text-3xl mx-8">
+          Facebook helps you to connect and share with the people in your life.
+        </p>
+      </div>
+      <!-- // right side  -->
+      <div class="right flex flex-col bg-white p-8 rounded-lg w-1/4 relative">
+        <input
+          type="text"
+          placeholder="Email address or phone number"
+          class="px-4 h-12 my-2 border border-1 border-gray-200 rounded-lg outline-blue-600"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          class="px-4 h-12 my-2 border border-1 border-gray-200 rounded-lg outline-blue-600"
+        />
+        <button
+          class="bg-blue-600 text-white py-2 my-2 rounded-md font-bold hover:bg-blue-700"
+        >
+          Log In
+        </button>
+        <span
+          class="text-blue-600 text-center text-sm my-2 cursor-pointer hover:underline"
+          >Forgotten password?</span
+        >
+        <hr class="my-2" />
+        <button
+          class="bg-green-600 text-white my-2 rounded-md font-bold w-fit text-center py-2 px-4 mx-auto hover:bg-green-700"
+        >
+          Create New Account
+        </button>
+        <span
+          class="absolute -bottom-11 text-sm cursor-pointer hover:underline text-center"
+          ><span class="font-bold">Create a page</span> for a celebrity, brand
+          or business</span
+        >
+      </div>
     </div>
   </body>
 </html>
